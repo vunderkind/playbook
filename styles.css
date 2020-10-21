@@ -1,3 +1,13 @@
+@font-face {
+    font-family: Gilroy bold;
+    src: url(./assets/fonts/Gilroy-Bold.otf);
+  }
+
+  @font-face {
+      font-family: Gilroy medium;
+      src: url(./assets/fonts/Gilroy-Medium.otf)
+  }
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,11 +20,62 @@
 }
 
 #left {
-    background: black;
+    background: #fff;
     width: 50%;
+    padding: 6.9em 5em 0 6.3em;
+    line-height: 1.2;
+}
+
+h1 {
+    font-family: 'Gilroy bold';
+    font-size: 64px;
+}
+
+h2 {
+    font-family: 'Gilroy medium';
+    font-size: 20px;
+    padding-top: 1em;
 }
 
 #right {
-    background: yellow;
+    background: #5053CA;
     width: 50%;
+}
+
+#highlight {
+    color: #6367EF;
+}
+#checklist {
+    font-family: 'Gilroy bold';
+    font-size: 18px;
+    margin-top: 0.7em;
+}
+
+.check {
+    padding: 0.3em 0;
+}
+.check:before {
+    content: url('./assets/images/check.png');
+    position: relative;
+    top: 10px;
+    margin-right: 0.7em;
+}
+
+.fa-long-arrow-right {
+    color: white;
+}
+
+button {
+    height: 3.7em;
+    padding: 0 2em;
+    font-family: 'Gilroy-Bold';
+    margin-top: 3.3em;
+    color: white;
+    background: #171E33;
+    border-radius: 6px;
+    border: none;
+}
+
+#arrow {
+    padding-left: 1em;
 }
