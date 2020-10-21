@@ -14,15 +14,18 @@
     padding: 0;
 }
 
+
+
 header {
     position: absolute;
     font-family: 'Gilroy bold';
-    font-size: 18px;
-    width: 100vw;
-    left: 5.6em;
+    font-size: 14px;
+    width: 86vw;
+    left: 7.1em;
     display: flex;
     justify-content: space-between;
-    top: 0.7em;
+    align-items: baseline;
+    top: -0.9em;
 }
 
 #logo-elems{
@@ -50,6 +53,8 @@ header {
 h1 {
     font-family: 'Gilroy bold';
     font-size: 64px;
+    margin-top:1em;
+    transition: margin-top 1s;
 }
 
 h2 {
@@ -70,6 +75,8 @@ h2 {
     font-family: 'Gilroy bold';
     font-size: 18px;
     margin-top: 0.7em;
+    opacity: 0;
+    transition: 1s;
 }
 
 .check {
@@ -93,12 +100,16 @@ button {
     border-radius: 6px;
     border: none;
     cursor: pointer;
+    transition: 
+        color 1s,
+        background-color 1s  ;
 }
 
-#button2{
-    margin-left: -28.4em;
-    margin-top: 2.3em;
+#button2:hover {
+    color:black;
+    background: #fff;
 }
+
 
 button:hover {
     background: #6367EF;
@@ -118,4 +129,6 @@ button:hover {
     color: gray;
     margin-top: 7.7em;
     letter-spacing: 0.08em;
+    opacity: 0;
+    transition: opacity 1s 1.5s;
 }
