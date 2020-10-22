@@ -8,6 +8,11 @@
       src: url(./assets/fonts/Gilroy-Medium.otf)
   }
 
+  @font-face {
+      font-family: Gilroy regular;
+      src: url(./assets//fonts/Gilroy-Regular.otf)
+  }
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -131,4 +136,74 @@ button:hover {
     letter-spacing: 0.08em;
     opacity: 0;
     transition: opacity 1s 1.5s;
+}
+
+#testimonials {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 100vh;
+    width: 87vw;
+    margin: 0 auto;
+    margin-top: 4em;
+}
+
+#one {
+    width: 70%;
+    display: flex;
+    margin-top: 10em;
+}
+
+#two {
+    width: 30%;
+}
+
+#twenty {
+    width: 40%;
+}
+#eighty {
+    width: 50%;
+}
+
+#subheader {
+    font-size: 56px;
+    padding: 0;
+}
+
+#secondary-slider {
+    margin-top: 17em;
+    display: flex;
+}
+
+#slider-one, #slider-two{
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    background: #171E33;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1em;
+    transition: background 0.5s;
+    cursor: pointer;
+}
+
+#slider-one:hover, #slider-two:hover {
+    background: #6367EF;
+}
+
+#slider-one >img {
+    width: 30%;
+    transform: rotate(180deg)
+}
+
+#slider-two >img {
+    width: 30%;
+}
+
+#social-proof {
+    font-size: 24px;
+    font-family: 'Gilroy regular';
+    line-height: 1.7;
+    letter-spacing: 0.01em;
 }
