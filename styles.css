@@ -83,10 +83,6 @@ a:hover {
 
   /* We'll be using the 'transform' property to move the carousel's items, so setting the 'transform-style' to 'preserve-3d' will make sure our nested elements are rendered properly in the 3D space. */
   .carousel {
-    /* -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    transform-style: preserve-3d; */
-    perspective: 500px;
     z-index:5;
     position: absolute;
     top: 28em;
@@ -107,6 +103,7 @@ a:hover {
     height: 480px;
     z-index: -100;
     transition: none;
+    transform-style: preserve-3d;
   }
 
   .carousel__photo>img {
@@ -122,27 +119,26 @@ a:hover {
     position: relative;
     z-index: 1;
     transition: transform .5s, opacity .5s, z-index .5s;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
   
   .carousel__photo.prev,
   .carousel__photo.next {
     z-index: 0;
-    transition: transform .5s, opacity .3s, z-index .5s;
-    
+    transition: transform 0.5s, opacity .3s, z-index .5s;
   }
   
   /* Translate previous item to the left */
   .carousel__photo.prev {
     opacity:0;
-    transform: translateX(-100%) rotateY(-40deg) scale(0.5);
+    transform: translateX(-150%) rotateY(-40deg) scale(0.5);
   }
   
   /* Translate next item to the right */
   .carousel__photo.next {
-      opacity: 0.9;
-    transform: translateX(100%) rotateY(-20deg) scale(0.7);
+    opacity: 0.9;
+    transform: perspective(10cm) translateX(65%)  rotateY(-30deg) scale(0.8);;
     z-index: -5;
-    filter: blur(3px)
   }
   
   /* Style navigation buttons to sit in the middle, either side of the carousel. */
