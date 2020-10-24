@@ -254,7 +254,7 @@ button:hover {
 
 #testimonials {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: flex-start;
     height: 100vh;
     width: 87vw;
@@ -262,17 +262,17 @@ button:hover {
     margin-top: 4em;
 }
 
+#subheader2 {
+    display: none;
+}
+
 #one {
-    width: 70%;
+    width: 30%;
     display: flex;
     margin-top: 10em;
 }
 
-#two {
-    width: 30%;
-}
-
-#two>img {
+#eighty>img {
     width: 100%;
 }
 
@@ -280,8 +280,12 @@ button:hover {
     width: 40%;
 }
 #eighty {
-    width: 50%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 #subheader {
     font-size: 56px;
@@ -324,6 +328,19 @@ button:hover {
     font-family: 'Gilroy regular';
     line-height: 1.7;
     letter-spacing: 0.01em;
+    margin-right: 2em;
+    padding-top: 4em;
+}
+
+#social-proof>h3 {
+    font-size: 1em;
+    padding-top: 2.5em;
+    font-family: 'Gilroy bold';
+}
+
+#social-proof>#credential{
+    display: inline-block;
+    padding-top: 1em;
 }
 
 /* Mobile here */
@@ -348,7 +365,7 @@ button:hover {
     #left {
         position: absolute;
         top: 75vh;
-        padding: 2em 0 0 2em;
+        padding: 2em 2em 0 2em;
     }
     header {
         display: none;
@@ -383,13 +400,59 @@ button:hover {
 
     #testimonials {
         flex-direction: column;
+        /* margin: 0; */
+        padding: 1em;
+        margin-top: 17em;
     }
 
-    #one,#two {
+    #one,#eighty,#twenty {
         width: 100%;
+        margin:0;
+        padding: 0;
     }
 
-    #one {
-        flex-direction: column;
+    #social-proof {
+        font-size: 20px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 2em 0;
+    }
+    #eighty {
+        flex-direction: column-reverse;
+    }
+
+    #social-proof>#credential {
+        font-size: 16px;
+    }
+
+    #social-proof {
+        font-size: 20px;
+    }
+    
+
+    #two {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #two>img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #scroll {
+        display: none;
+    }
+
+    #secondary-slider{
+        margin: 0;
+        display: none;
+    }
+    #subheader {
+        display: none;
+    }
+    #subheader2 {
+        font-size: 28px;
+        display: block;
     }
   }
