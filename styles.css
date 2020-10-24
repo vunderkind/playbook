@@ -48,8 +48,6 @@ a:hover {
     border-radius: 25px;
     margin: 0;
     padding: 0;
-    transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
   }
   .carousel #phone {
     width: 240px;
