@@ -33,8 +33,6 @@
     margin: auto; 
 } 
 
-
-
 a{
     text-decoration: none;
     color: black;
@@ -43,9 +41,6 @@ a{
 a:hover {
     color: #6367EF;
 }
-
-
-
  
  .carousel #deets {
     position: absolute;
@@ -97,13 +92,10 @@ a:hover {
     transition: transform 0.5s, opacity .3s, z-index .5s;
   }
   
-  /* Translate previous item to the left */
   .carousel__photo.prev {
     opacity:0;
     transform: translateX(-150%) rotateY(-40deg) scale(0.5);
   }
-  
-  /* Translate next item to the right */
   .carousel__photo.next {
     opacity: 0.9;
     transform: perspective(10cm) translateX(70%) translateY(-5%) rotateY(-30deg) scale(0.7);
@@ -185,7 +177,7 @@ header {
 
 h1 {
     font-family: 'Gilroy bold';
-    font-size: 64px;
+    font-size: 4em;
     margin-top:0.5em;
     transition: margin-top 0.5s;
     transition-timing-function: ease-in-out;
@@ -366,6 +358,20 @@ button:hover {
         width: 100%;
         padding: 0;
     }
+    #logo-elems,#button-elem {
+        display: none;
+    }
+
+   #mobile-logo{
+        display:block;
+        position: absolute;
+        top: 4em;
+        left:-4em;
+    }
+
+    .carousel__button--next {
+        bottom: 3em;
+    }
 
     #right {
         position: absolute;
@@ -379,15 +385,13 @@ button:hover {
         top: 75vh;
         padding: 2em 2em 0 2em;
     }
-    header {
-        display: none;
-    }
+    
 
     h1 {
-        font-size: 2.6em;
+        font-size: 2.5em;
     }
     .carousel {
-        right:8.5em;
+        right:40%;
     }
     .carousel #phone {
         width: 200px;
@@ -412,9 +416,9 @@ button:hover {
 
     #testimonials {
         flex-direction: column;
-        /* margin: 0; */
-        padding: 1em;
+        padding: 0em;
         margin-top: 17em;
+        padding: 0.4em;
     }
 
     #one,#eighty,#twenty {
@@ -431,6 +435,7 @@ button:hover {
     }
     #eighty {
         flex-direction: column-reverse;
+
     }
 
     #social-proof>#credential {
@@ -438,12 +443,11 @@ button:hover {
     }
 
     #social-proof {
-        font-size: 20px;
+        font-size: 19px;
     }
     
 
     #two {
-        width: 90%;
         margin: 0 auto;
     }
 
@@ -466,6 +470,91 @@ button:hover {
     #subheader2 {
         font-size: 28px;
         display: block;
-        padding-bottom: 1em;
+        padding-bottom: 2em;
     }
   }
+
+  /* Tablet */
+  @media only screen 
+and (min-device-width : 601px) 
+and (max-device-width : 1024px)  { 
+        .main {
+            height: 60vh;
+        }
+        #right {
+            position: absolute;
+            height: inherit;
+            right:0;
+            background-size: 200%;
+            background-position: right 100%;
+        }
+        h1 {
+            font-size: 35px;
+        }
+        #left{
+            padding: 6.9em 0 0 2em;
+        }
+
+        header {
+            left:3em;
+        }
+
+        .carousel {
+            right: 40%;
+            bottom: -3em;
+        }
+        .carousel>#phone {
+            width: 170px;
+        }
+
+        .carousel>#deets {
+            width: 48px;
+            bottom: 8em;
+            left:4em;
+        }
+        .carousel__photo {
+            height: 315px;
+            bottom: 7.5em;
+            left:0.5em;
+        }
+        .check {
+            font-size: 13px;
+        }
+
+        button {
+            width: 12em;
+            padding: 0;
+        }
+        button>img {
+            display: none;
+        }
+        #scroll {
+            display: none;
+        }
+
+        #testimonials {
+            height: 100%;
+            width: 100vw;
+            padding:2.5em;
+        }
+        #subheader {
+            font-size: 36px;
+        }
+
+        #social-proof {
+            font-size: 13px;
+        }
+
+        #two{
+            width: 100%;
+        }
+        #two>img{
+            width: 100%;
+        }
+        #eighty {
+            align-items: flex-end;
+        }
+        #secondary-slider {
+            display:none;
+        }
+}
