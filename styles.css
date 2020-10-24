@@ -69,6 +69,12 @@ a:hover {
     top:0;
     z-index:-2;
  }
+
+ .carousel #base {
+    z-index: 999;
+    bottom: -7.7em;
+    position: absolute;
+}
   .carousel__photo {
     opacity: 0;
     position: absolute;
@@ -143,6 +149,10 @@ header {
     z-index: 6;
 }
 
+#mobile-logo {
+    display: none;
+}
+
 #logo-elems{
     display: flex;
     width: 21.5em;
@@ -151,6 +161,7 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
 
 
 .main {
@@ -310,7 +321,6 @@ button:hover {
     justify-content: center;
     align-items: center;
     margin-right: 1em;
-    transition: background 0.5s;
     cursor: pointer;
 }
 
@@ -413,9 +423,17 @@ button:hover {
     }
 
     .carousel #deets {
-        right: 35%;
+        right: 40%;
         width: 50px;
-        bottom: 0;
+        bottom: -1.5em;
+    }
+
+    .carousel #base {
+        z-index: 999;
+        left: 0;
+        width: 230px;
+        bottom: -8.2em;
+        position: absolute;
     }
 
     #scroll {
@@ -513,6 +531,13 @@ and (max-device-width : 1024px)  {
         }
         .carousel>#phone {
             width: 170px;
+        }
+
+        .carousel #base {
+            left: -0.8em;
+            width: 210px;
+            bottom: 2em;
+            position: absolute;
         }
 
         .carousel>#deets {
