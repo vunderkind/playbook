@@ -1,3 +1,13 @@
+document.onreadystatechange = function() { 
+    if (document.readyState !== "complete") { 
+        document.querySelector("body").style.visibility = "hidden"; 
+        document.querySelector("#loader").style.visibility = "visible"; 
+    } else { 
+        document.querySelector("#loader").style.display = "none"; 
+        document.querySelector("body").style.visibility = "visible"; 
+    } 
+}; 
+
 function addLoader(){
     document.getElementById("h1").style.marginTop = "0em";
     document.getElementById("checklist").style.opacity = "1";
@@ -5,6 +15,7 @@ function addLoader(){
 }
 
 window.onload = addLoader();
+
 
 !(function(d){
     var itemClassName = "carousel__photo";
