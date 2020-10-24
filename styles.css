@@ -354,6 +354,10 @@ button:hover {
         flex-direction: column-reverse;
         justify-content: space-between;
     }
+
+    .check {
+        font-size: 14px;
+    }
     #left, #right {
         width: 100%;
         padding: 0;
@@ -383,7 +387,7 @@ button:hover {
     #left {
         position: absolute;
         top: 75vh;
-        padding: 2em 2em 0 2em;
+        padding: 2em 0 0 2em;
     }
     
 
