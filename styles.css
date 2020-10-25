@@ -7,8 +7,8 @@
 
 
 #loader { 
-    width: 70px; 
-    height: 70px; 
+    width: 4rem; 
+    height: 4rem; 
 } 
 .center { 
     position: absolute; 
@@ -214,7 +214,7 @@ h2 {
 button {
     height: 3.7em;
     padding: 0 2em;
-    font-family: 'Gilroy-Bold';
+    font-family: 'Gilroy bold';
     margin-top: 3.3em;
     color: white;
     background: #171E33;
