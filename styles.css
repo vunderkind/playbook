@@ -7,16 +7,14 @@
 
 
 #loader { 
-    width: 4rem; 
-    height: 4rem; 
+    width: 100vw;
+    height: 100vh;
 } 
 .center { 
-    position: absolute; 
-    top: 0; 
-    bottom: 0; 
-    left: 0; 
-    right: 0; 
-    margin: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffebe2;
 } 
 
 a{
